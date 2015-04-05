@@ -1,0 +1,52 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: #384d67;
+}
+
+#content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Wall */
+
+.wall {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wall .box {
+    width: 33.33%;
+    float: left;
+    background: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.wall .box:hover {
+
+}
+
+.wall .box img{
+    width: 100%;
+}
+
+.wall .box .info {
+    display: none;
+}
+
+/* Big slideshow */
+
+.wall .box.box-open {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.wall .box.box-open img {
+    width: auto;
+    height: 100%;
+}
