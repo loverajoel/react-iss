@@ -20,7 +20,7 @@ module.exports = {
     getDistances: function(data) {
         var self = this;
         return Cities.map(function(city) {
-            return {name: city.city, distance: self.calulateDistances(city.latitude, city.longitude, data.latitude, data.longitude)};
+            return {name: city.CapitalName, distance: self.calulateDistances(city.latitude, city.longitude, data.latitude, data.longitude)};
         });
     }
 };

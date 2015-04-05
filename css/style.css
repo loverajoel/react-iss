@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('https://s3.amazonaws.com/assets.kickofflabs.com/backgrounds/site/background_image/2357/space.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Helvetica'
+}
+
+ul {
+
+}
+
+ul li {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+    border: 1px solid #fff;
+}
+
+ul li span {
+    color: #fff
+}

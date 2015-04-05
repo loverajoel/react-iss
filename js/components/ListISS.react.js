@@ -24,13 +24,12 @@ var ListISS = React.createClass({
         setInterval(this.loadData, 2000);
     },
     render: function() {
-
         var listNodes = this.state.data.map(function(item) {
             return (
-                <Item key={item.distance} data={item}/>
+                <Item data={item}/>
                 )
         })
-        return (<div>{listNodes}</div>
+        return (<ul>{listNodes}</ul>
         )
     }
 });
