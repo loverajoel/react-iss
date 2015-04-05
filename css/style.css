@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     padding: 0px;
@@ -60,11 +61,10 @@ body {
     clear: both;
     display: inline-block;
 }
-
-@media (max-width: 768px) {
+@media (max-device-width: 640px) {
     body {
-        background-size: 100% 100%;
-        background-attachment: fixed;
+        background: #000;
+        background-image: none; 
     }
 
     .wrapper ul {
