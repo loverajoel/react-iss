@@ -1,6 +1,7 @@
 var Cities = require('../constants/Cities');
 
 module.exports = {
+    // http://stackoverflow.com/questions/27928/how-do-i-calculate-distance-between-two-latitude-longitude-points
     calulateDistances: function(lat1,lon1,lat2,lon2) {
         var deg2rad = function(deg) {
         return deg * (Math.PI/180);
