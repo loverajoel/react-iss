@@ -21,7 +21,7 @@ var ListISS = React.createClass({
         });
     },
     componentDidMount: function() {
-        setInterval(this.loadData, 2000);
+        setInterval(this.loadData, 500);
     },
     render: function() {
         var listNodes = this.state.data.map(function(item) {
