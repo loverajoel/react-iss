@@ -28,6 +28,7 @@ body {
 }
 
 .wrapper ul {
+    width: 30%;
     float: left;
     overflow: hidden;
     border-left: 3px dotted #fff;
@@ -36,6 +37,7 @@ body {
 }
 
 .wrapper ul li {
+    width: 90%;
     float: left;
     padding: 10px;
     margin: 10px;
@@ -44,9 +46,17 @@ body {
 }
 
 .wrapper ul li .city-name {
-
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    display: inline-block;
 }
 
 .wrapper ul li .distance {
-
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    display: inline-block;
 }
