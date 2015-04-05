@@ -5,7 +5,7 @@ var IssApi = require('../utils/IssAPI');
 var Item = React.createClass({
     render: function() {
         return(
-            <li><span className="distance">{this.props.data.distance}</span><span className="city-name">{this.props.data.name}</span></li>
+            <li><span className="distance">{this.props.data.distance}Km</span><span className="city-name">{this.props.data.name}</span></li>
             )
     }
 });
@@ -24,6 +24,7 @@ var ListISS = React.createClass({
         setInterval(this.loadData, 500);
     },
     render: function() {
+        this.state.data.sort(function(a,b) { return a.distance - b.distance });
         var listNodes = this.state.data.map(function(item) {
             return (
                 <Item data={item}/>
