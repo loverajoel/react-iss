@@ -5,7 +5,7 @@ var IssApi = require('../utils/IssAPI');
 var Item = React.createClass({
     render: function() {
         return(
-            <li><span>{this.props.data.name}</span><span>{this.props.data.distance}</span></li>
+            <li><span className="distance">{this.props.data.distance}</span><span className="city-name">{this.props.data.name}</span></li>
             )
     }
 });
